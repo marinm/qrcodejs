@@ -1,0 +1,12 @@
+{
+	"name": "QR Code Maker",
+	"short_name": "QRC",
+	"icons": {
+		"src": "icon.png",
+		"sizes": "512x512",
+		"type": "image/png"
+	},
+	"display": "standalone",
+	"theme_color": "#FFFFFF",
+	"background_color": "#FFFFFF"
+}
