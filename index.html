@@ -32,10 +32,15 @@
                 gap: 10mm;
             }
 
-            input[type="text"] {
+            textarea {
                 font-size: 1rem;
                 padding: 2mm;
                 width: 100%;
+                border: 1px solid #aaaaaa;
+                padding: 2mm;
+                border-radius: 1mm;
+                height: 5rem;
+                overflow-wrap: break-word;
             }
 
             #qrcode {
@@ -47,7 +52,11 @@
     <body>
         <div id="container">
             <div id="qrcode"></div>
-            <input id="text" type="text" value="https://marinm.net/" />
+            <textarea
+                id="text"
+                type="text"
+                spellcheck="false"
+            >https://marinm.net/</textarea>
         </div>
 
         <script src="qrcode.js"></script>
@@ -71,11 +80,6 @@
             }
 
             input.addEventListener("blur", makeCode);
-            input.addEventListener("keydown", (e) => {
-                if (e.key == "Enter") {
-                    makeCode();
-                }
-            });
 
             makeCode();
         </script>
